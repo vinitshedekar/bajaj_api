@@ -12,7 +12,7 @@ const userId = "vinit_shedekar_04052003"; // Example user ID
 const email = "vinitdhanaji.shedekar2021@vitstudent.ac.in"; // Example email
 const rollNumber = "21BPS1259"; // Example roll number
 
-app.post('/bfhl', (req, res) => {
+app.post('/bfhl5', (req, res) => {
     const data = req.body.data || [];
     const numbers = data.filter(item => !isNaN(item));
     const alphabets = data.filter(item => isNaN(item) && item.length === 1);
@@ -30,7 +30,7 @@ app.post('/bfhl', (req, res) => {
     });
 });
 
-app.get('/bfhl', (req, res) => {
+app.get('/bfhl5', (req, res) => {
     res.status(200).json({ operation_code: 1 });
 });
 
